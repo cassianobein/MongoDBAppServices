@@ -1,31 +1,4 @@
 {
     "collection": "Info",
-    "database": "Darwin",
-    "roles": [
-        {
-            "name": "readOwnWriteOwn",
-            "apply_when": {},
-            "document_filters": {
-                "write": {
-                    "owner_id": "%%user.id"
-                },
-                "read": {
-                    "owner_id": "%%user.id"
-                }
-            },
-            "fields": {
-                "first_name": {
-                    "write": false,
-                    "read": true
-                },
-                "last_name": {
-                    "write": false,
-                    "read": true
-                }
-            },
-            "insert": true,
-            "delete": true,
-            "search": true
-        }
-    ]
+    "database": "Darwin"
 }
