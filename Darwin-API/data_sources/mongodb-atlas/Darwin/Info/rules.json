@@ -1,6 +1,13 @@
 {
     "collection": "Info",
     "database": "Darwin",
+    "filters": [
+        {
+            "name": "fields",
+            "query": {},
+            "apply_when": {}
+        }
+    ],
     "roles": [
         {
             "name": "readOwnWriteOwn",
