@@ -7,6 +7,11 @@
             "query": {
                 "owner_id": "%%user.id"
             },
+            "projection": {
+                "first_name": {
+                    "$numberInt": "1"
+                }
+            },
             "apply_when": {
                 "%%true": true
             }
@@ -20,16 +25,8 @@
                 "write": false,
                 "read": true
             },
-            "fields": {
-                "first_name": {
-                    "write": false,
-                    "read": true
-                },
-                "last_name": {
-                    "write": false,
-                    "read": true
-                }
-            },
+            "read": true,
+            "write": false,
             "insert": false,
             "delete": false,
             "search": true
