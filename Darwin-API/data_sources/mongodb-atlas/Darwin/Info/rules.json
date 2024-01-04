@@ -4,9 +4,7 @@
     "filters": [
         {
             "name": "isSingle",
-            "query": {
-                "is_married": false
-            },
+            "query": {},
             "projection": {
                 "first_name": {
                     "$numberInt": "1"
