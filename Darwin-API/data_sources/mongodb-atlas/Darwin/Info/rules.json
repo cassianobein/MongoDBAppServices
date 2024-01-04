@@ -9,8 +9,16 @@
                 "write": false,
                 "read": true
             },
-            "read": true,
-            "write": false,
+            "fields": {
+                "first_name": {
+                    "write": false,
+                    "read": true
+                },
+                "last_name": {
+                    "write": false,
+                    "read": true
+                }
+            },
             "insert": false,
             "delete": false,
             "search": true
