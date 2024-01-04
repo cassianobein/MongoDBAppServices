@@ -1,6 +1,25 @@
 {
     "collection": "Info",
     "database": "Darwin",
+    "filters": [
+        {
+            "name": "isSingle",
+            "query": {
+                "is_married": false
+            },
+            "projection": {
+                "first_name": {
+                    "$numberInt": "1"
+                },
+                "last_name": {
+                    "$numberInt": "1"
+                }
+            },
+            "apply_when": {
+                "%%user.data.email": "darwin@ulta.com"
+            }
+        }
+    ],
     "roles": [
         {
             "name": "readOwnWriteOwn",
