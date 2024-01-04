@@ -3,23 +3,6 @@
     "database": "Darwin",
     "roles": [
         {
-            "name": "readOwnWriteOwn",
-            "apply_when": {},
-            "document_filters": {
-                "write": {
-                    "owner_id": "%%user.id"
-                },
-                "read": {
-                    "owner_id": "%%user.id"
-                }
-            },
-            "read": true,
-            "write": true,
-            "insert": true,
-            "delete": true,
-            "search": true
-        },
-        {
             "name": "OnlyFields",
             "apply_when": {},
             "document_filters": {
@@ -36,6 +19,23 @@
                     "read": true
                 }
             },
+            "search": true
+        },
+        {
+            "name": "readOwnWriteOwn",
+            "apply_when": {},
+            "document_filters": {
+                "write": {
+                    "owner_id": "%%user.id"
+                },
+                "read": {
+                    "owner_id": "%%user.id"
+                }
+            },
+            "read": true,
+            "write": true,
+            "insert": true,
+            "delete": true,
             "search": true
         }
     ]
