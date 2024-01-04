@@ -5,6 +5,14 @@
         {
             "name": "fields",
             "query": {},
+            "projection": {
+                "email": {
+                    "$numberInt": "0"
+                },
+                "first_name": {
+                    "$numberInt": "0"
+                }
+            },
             "apply_when": {}
         }
     ],
