@@ -16,7 +16,7 @@
                 }
             },
             "apply_when": {
-                "%%user.data.email": "darwin@ulta.com"
+                "%%user.id": "65972fd5582bccf15aaf9b33"
             }
         }
     ],
