@@ -1,6 +1,21 @@
 {
     "collection": "Info",
     "database": "Darwin",
+    "filters": [
+        {
+            "name": "OnlyFullname",
+            "query": {},
+            "projection": {
+                "first_name": {
+                    "$numberInt": "1"
+                },
+                "last_name": {
+                    "$numberInt": "1"
+                }
+            },
+            "apply_when": {}
+        }
+    ],
     "roles": [
         {
             "name": "readOwnWriteOwn",
