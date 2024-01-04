@@ -6,11 +6,8 @@
             "name": "fields",
             "query": {},
             "projection": {
-                "email": {
-                    "$numberInt": "0"
-                },
                 "first_name": {
-                    "$numberInt": "0"
+                    "$numberInt": "1"
                 }
             },
             "apply_when": {}
