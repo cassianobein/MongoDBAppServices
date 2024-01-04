@@ -15,7 +15,9 @@
             },
             "apply_when": {
                 "%%user.data.email": {
-                    "%in": "darwin@ulta.com"
+                    "%in": [
+                        "darwin@ulta.com"
+                    ]
                 }
             }
         }
