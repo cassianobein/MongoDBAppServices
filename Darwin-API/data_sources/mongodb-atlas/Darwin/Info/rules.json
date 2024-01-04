@@ -4,7 +4,9 @@
     "filters": [
         {
             "name": "fields",
-            "query": {},
+            "query": {
+                "owner_id": "%%user.id"
+            },
             "projection": {
                 "first_name": {
                     "$numberInt": "1"
