@@ -13,7 +13,11 @@
                     "$numberInt": "1"
                 }
             },
-            "apply_when": {}
+            "apply_when": {
+                "%%user.data.email": {
+                    "%in": "darwin@ulta.com"
+                }
+            }
         }
     ],
     "roles": [
