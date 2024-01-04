@@ -1,23 +1,6 @@
 {
     "collection": "Info",
     "database": "Darwin",
-    "filters": [
-        {
-            "name": "isSingle",
-            "query": {},
-            "projection": {
-                "first_name": {
-                    "$numberInt": "1"
-                },
-                "last_name": {
-                    "$numberInt": "1"
-                }
-            },
-            "apply_when": {
-                "%%user.id": "65972fd5582bccf15aaf9b33"
-            }
-        }
-    ],
     "roles": [
         {
             "name": "readOwnWriteOwn",
