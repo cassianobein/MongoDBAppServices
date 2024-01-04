@@ -1,6 +1,17 @@
 {
     "collection": "Info",
     "database": "Darwin",
+    "filters": [
+        {
+            "name": "filter",
+            "query": {
+                "owner_id": "%%user.id"
+            },
+            "apply_when": {
+                "%%true": true
+            }
+        }
+    ],
     "roles": [
         {
             "name": "readAll",
