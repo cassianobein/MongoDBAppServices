@@ -3,25 +3,6 @@
     "database": "Darwin",
     "roles": [
         {
-            "name": "OnlyFields",
-            "apply_when": {},
-            "document_filters": {
-                "write": {},
-                "read": {}
-            },
-            "fields": {
-                "first_name": {
-                    "write": false,
-                    "read": true
-                },
-                "last_name": {
-                    "write": false,
-                    "read": true
-                }
-            },
-            "search": true
-        },
-        {
             "name": "readOwnWriteOwn",
             "apply_when": {},
             "document_filters": {
