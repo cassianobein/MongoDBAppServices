@@ -10,7 +10,9 @@
                     "$numberInt": "1"
                 }
             },
-            "apply_when": {}
+            "apply_when": {
+                "%%true": true
+            }
         }
     ],
     "roles": [
