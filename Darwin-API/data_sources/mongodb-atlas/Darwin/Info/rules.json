@@ -10,6 +10,9 @@
             "projection": {
                 "first_name": {
                     "$numberInt": "1"
+                },
+                "last_name": {
+                    "$numberInt": "1"
                 }
             },
             "apply_when": {
