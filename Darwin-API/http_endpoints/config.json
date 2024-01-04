@@ -13,7 +13,7 @@
     {
         "route": "/findInfobyName",
         "http_method": "GET",
-        "function_name": "FindInfo",
+        "function_name": "FindInfobyName",
         "validation_method": "NO_VALIDATION",
         "respond_result": true,
         "fetch_custom_user_data": false,
