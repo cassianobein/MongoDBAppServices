@@ -1,27 +1,6 @@
 {
     "collection": "Info",
     "database": "Darwin",
-    "filters": [
-        {
-            "name": "OnlyFullname",
-            "query": {},
-            "projection": {
-                "first_name": {
-                    "$numberInt": "1"
-                },
-                "last_name": {
-                    "$numberInt": "1"
-                }
-            },
-            "apply_when": {
-                "%%user.data.email": {
-                    "%in": [
-                        "darwin@ulta.com"
-                    ]
-                }
-            }
-        }
-    ],
     "roles": [
         {
             "name": "readOwnWriteOwn",
