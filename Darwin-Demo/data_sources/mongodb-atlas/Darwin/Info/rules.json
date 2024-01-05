@@ -7,6 +7,14 @@
             "query": {
                 "owner_id": "%%user.id"
             },
+            "projection": {
+                "orders": {
+                    "$numberInt": "0"
+                },
+                "spent": {
+                    "$numberInt": "0"
+                }
+            },
             "apply_when": {
                 "%%true": true
             }
