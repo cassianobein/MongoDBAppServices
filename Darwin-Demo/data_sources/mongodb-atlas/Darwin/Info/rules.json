@@ -7,14 +7,6 @@
             "query": {
                 "owner_id": "%%user.id"
             },
-            "projection": {
-                "orders": {
-                    "$numberInt": "0"
-                },
-                "spent": {
-                    "$numberInt": "0"
-                }
-            },
             "apply_when": {
                 "%%true": true
             }
@@ -32,16 +24,8 @@
                     "owner_id": "%%user.id"
                 }
             },
-            "fields": {
-                "first_name": {
-                    "write": false,
-                    "read": true
-                },
-                "last_name": {
-                    "write": false,
-                    "read": true
-                }
-            },
+            "read": true,
+            "write": false,
             "insert": true,
             "delete": true,
             "search": true
