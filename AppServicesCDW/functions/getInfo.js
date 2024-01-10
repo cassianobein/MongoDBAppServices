@@ -21,7 +21,7 @@ exports = function({ query, headers, body}, response) {
     // var x = context.values.get("value_name");
 
     // Querying a mongodb service:
-    const doc = context.services.get("mongodb-atlas").db("Darwin").collection("Info").findOne();
+    const doc = context.services.get("mongodb-atlas").db("Darwin").collection("Info").find().toArray();
 
     // Calling a function:
     // const result = context.functions.execute("function_name", arg1, arg2);
