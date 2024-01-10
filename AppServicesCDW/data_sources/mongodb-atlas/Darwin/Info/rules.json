@@ -13,8 +13,16 @@
                     "owner_id": "%%user.id"
                 }
             },
-            "read": true,
-            "write": true,
+            "fields": {
+                "first_name": {
+                    "write": false,
+                    "read": true
+                },
+                "last_name": {
+                    "write": false,
+                    "read": true
+                }
+            },
             "insert": true,
             "delete": true,
             "search": true
