@@ -14,20 +14,16 @@
     ],
     "roles": [
         {
-            "name": "readOwnWriteOwn",
+            "name": "readAll",
             "apply_when": {},
             "document_filters": {
-                "write": {
-                    "owner_id": "%%user.id"
-                },
-                "read": {
-                    "owner_id": "%%user.id"
-                }
+                "write": false,
+                "read": true
             },
             "read": true,
             "write": false,
-            "insert": true,
-            "delete": true,
+            "insert": false,
+            "delete": false,
             "search": true
         }
     ]
