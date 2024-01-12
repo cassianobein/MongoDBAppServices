@@ -1,17 +1,6 @@
 {
     "collection": "Info",
     "database": "Darwin",
-    "filters": [
-        {
-            "name": "FilterbyUserID",
-            "query": {
-                "owner_id": "%%user.id"
-            },
-            "apply_when": {
-                "%%true": true
-            }
-        }
-    ],
     "roles": [
         {
             "name": "readAll",
